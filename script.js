@@ -1,6 +1,6 @@
 let arrayOfIntegers = [1, 2, 3, 4]; //Defined the array
 let targetValue = 1; //Defined the target Value
-var totalPair = []; // total pair that matches the condition
+var totalPair = []; // array to store pair results
 
   for (i = 0; i < arrayOfIntegers.length; i++) {
       var seletedArrayValue = arrayOfIntegers[i]; // select the value of the array elements one by one
@@ -9,7 +9,7 @@ var totalPair = []; // total pair that matches the condition
       if ( arrayOfIntegers.indexOf(differenceEqual) != -1 ) {  //checking if the differenceEqual mathces to the target value
          var pair = 1;  // true condition if matches
       } else {
-         var pair = 0; // flase condition if not matches
+         var pair = 0; // false condition if not matches
       }
       totalPair[i]=pair; // adding the results(total pair) in a array
   }
